@@ -1,0 +1,28 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+*.log
+
+# Python build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local data artifacts
+data/
+output/
+tmp/
+*.parquet
+
+# Airflow local artifacts
+airflow/logs/
+airflow/plugins/__pycache__/
