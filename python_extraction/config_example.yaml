@@ -1,0 +1,7 @@
+source_table: "sensor_table"
+output_base_path: "./data/raw/sensors"
+batch_size: 500
+max_workers: 4
+
+# Secrets devem ser passados por variável de ambiente:
+# ODBC_CONNECTION_STRING
