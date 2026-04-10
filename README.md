@@ -1,16 +1,16 @@
 # Desafio Técnico
 
 ## Escopo
-O desafio contempla:
-- desenho de uma pipeline em Airflow para ingestão diária de transações
+Esta entrega contempla:
+- proposta de pipeline em Airflow para ingestão diária de transações
 - consultas SQL sobre dados de sensores de refinaria
-- implementação em Spark para as mesmas questões SQL
-- script Bash para housekeeping
+- implementação em Spark para as mesmas questões analíticas
+- observação sobre o item de Bash
 - explicação sobre dbt
-- extração horária em Python a partir de uma base proprietária via ODBC
+- proposta de extração horária em Python a partir de uma base proprietária via ODBC
 
 ## Organização do repositório
-Este projeto será organizado em pastas separadas para cada tema do desafio:
+O projeto foi organizado em pastas separadas por tema:
 - airflow/
 - sql/
 - spark/
@@ -20,13 +20,14 @@ Este projeto será organizado em pastas separadas para cada tema do desafio:
 - docs/
 
 ## Premissas
-- Como não foi disponibilizado acesso à infraestrutura ou à base de dados real, as configurações de conexão e os caminhos de armazenamento foram parametrizados ou representados apenas como exemplo.
+- Como não foi disponibilizado acesso à infraestrutura ou à base de dados real, as configurações de conexão e os caminhos de armazenamento foram representados como exemplo.
 - O data lake foi considerado com as seguintes camadas lógicas:
   - Raw
   - Standardized
   - Aggregated
-- As janelas de extração utilizam intervalo semiaberto: (start_timestamp, end_timestamp).
+- As janelas de extração utilizam intervalo semiaberto: start_timestamp, end_timestamp.
 
 ## Observações
-- A solução de Airflow foi estruturada para execução com Docker, conforme solicitado no enunciado.
-- O repositório foi organizado para versionamento e entrega via Git
+- A parte de Airflow foi apresentada como proposta de solução, em linha com o que é solicitado no desafio.
+- O item de NiFi foi tratado em nível arquitetural, uma vez que o enunciado apenas indica seu uso para obtenção da taxa de câmbio via API REST.
+- O repositório foi organizado para versionamento e entrega via Git.
